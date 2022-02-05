@@ -3,6 +3,7 @@ import { supabase } from "utils/supabase";
 import styles from "./Header.module.scss";
 import Link from "next/link";
 import { FaUserAlt, FaSignOutAlt, FaGithub } from "react-icons/fa";
+import Logo from "../../../assets/doublecheck-logo.svg";
 
 const Header: FC = () => {
   const [user, setUser] = useState<string | undefined>();
@@ -20,7 +21,9 @@ const Header: FC = () => {
     <header className={styles.header}>
       <div className={styles.logo}>
         <Link href="/">
-          <a>Logo</a>
+          <a>
+            <Logo />
+          </a>
         </Link>
       </div>
       {!user ? (
