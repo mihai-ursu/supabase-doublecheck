@@ -1,0 +1,22 @@
+.todo_form {
+  margin: 2rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.name {
+  padding: 1rem;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: var(--color-pure-black);
+  color: var(--color-pure-white);
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+}

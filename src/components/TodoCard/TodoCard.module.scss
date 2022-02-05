@@ -1,0 +1,55 @@
+.card {
+  border-bottom: 1px solid var(--color-gray-200);
+  padding: 1rem 0.4rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  overflow: hidden;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.delete_button {
+  padding: 0.5rem;
+}
+
+.checkbox {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  path {
+    fill: none;
+    stroke: var(--color-pure-black);
+    stroke-width: 0.2rem;
+    stroke-linecap: round;
+  }
+}
+
+.todo_name {
+  font-size: 1.9rem;
+  line-height: 2.4rem;
+}
+
+.todo_title {
+  position: relative;
+  width: 100%;
+}
+
+.todo_line {
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  width: 100%;
+  background: var(--color-gray-400);
+  pointer-events: none;
+}
